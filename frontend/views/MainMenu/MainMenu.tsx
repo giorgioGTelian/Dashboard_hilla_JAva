@@ -23,13 +23,16 @@ const MainMenu: React.FC = () => {
             
             {/* Navigation */}
             <Navbar className="pcoded-navbar navbar-wrapper">
+                <div className="navbar-wrapper">
                 <NavItem className="navbar-brand header-logo">
-                    <div className="b-brand">
-                        <NavItem className="b-bg"> <i className="feather icon-trending-up"></i></NavItem>
-                        <div className="b-title">
+                    <a className="b-brand">
+                        <div className="b-bg"> 
+                        <i className="feather icon-trending-up"></i>
+                        </div>
+                        <span className="b-title">
                             Navbar scroll
-                        </div>
-                        </div>
+                        </span>
+                        </a>
                  {/* Convert the <a> to a button or another appropriate element */}
                 <a className="mobile-menu" id="mobile-collapse" href='javascript:'>
                     <span></span>
@@ -54,20 +57,10 @@ const MainMenu: React.FC = () => {
                         
                     </Nav>
                 </Navbar.Collapse>
-                    
+                </div>
             </Navbar>
 
-            {/* Header */}
-            <Navbar bg="light" expand="lg" className="pcoded-header navbar-expand-lg navbar-light">
-            <Form className="main-search">
-                            <InputGroup>
-                                <FormControl type="text" id="m-search" placeholder="Search . . ." />
-                                    <Button variant="outline-secondary">
-                                        <i className="feather icon-search"></i>
-                                    </Button>
-                            </InputGroup>
-                        </Form>
-            </Navbar>
+  
 
             {/* ... Your other contents ... */}
             </div>
