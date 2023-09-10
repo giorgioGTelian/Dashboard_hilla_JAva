@@ -9,9 +9,10 @@ export default function MainView() {
 
   return (
     <>
+    <body>
       <MainMenu />
       <FormLayout />
-
+    </body>
     </>
   );
 }
