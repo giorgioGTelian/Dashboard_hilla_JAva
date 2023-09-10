@@ -13,27 +13,28 @@ const MainMenu: React.FC = () => {
     };
     return (
         <div>
-            {/* Pre-loader */}
+            {/* Pre-loader 
             <div className="loader-bg">
                 <div className="loader-track">
                     <div className="loader-fill"></div>
                 </div>
             </div>
-
+            */}
+            
             {/* Navigation */}
-            <Navbar bg="light" expand="lg" className="pcoded-navbar navbar-wrapper">
-                <Navbar.Brand href="#home" className="navbar-brand header-logo">
-                    <NavItem className="b-brand">
+            <Navbar className="pcoded-navbar navbar-wrapper">
+                <NavItem className="navbar-brand header-logo">
+                    <div className="b-brand">
                         <NavItem className="b-bg"> <i className="feather icon-trending-up"></i></NavItem>
-                        <NavItem className="b-title">
+                        <div className="b-title">
                             Navbar scroll
-                        </NavItem>
-                        </NavItem>
+                        </div>
+                        </div>
                  {/* Convert the <a> to a button or another appropriate element */}
                 <a className="mobile-menu" id="mobile-collapse" href='javascript:'>
                     <span></span>
                 </a>
-                </Navbar.Brand>
+                </NavItem>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         {/* toggle full sceen on click */}
@@ -69,7 +70,7 @@ const MainMenu: React.FC = () => {
             </Navbar>
 
             {/* ... Your other contents ... */}
-        </div>
+            </div>
     );
 };
 
