@@ -32,9 +32,9 @@ const MainMenu: React.FC = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                  {/* Convert the <a> to a button or another appropriate element */}
-                <Button className="mobile-menu" id="mobile-collapse">
-                    <i className="feather icon-more-horizontal"></i>
-                </Button>
+                <NavItem className="mobile-menu" id="mobile-collapse">
+                    <div className="feather icon-more-horizontal"></div>
+                </NavItem>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
