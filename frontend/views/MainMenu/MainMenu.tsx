@@ -29,14 +29,11 @@ const MainMenu: React.FC = () => {
                             Navbar scroll
                         </NavItem>
                         </NavItem>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
                  {/* Convert the <a> to a button or another appropriate element */}
-                <NavItem className="mobile-menu" id="mobile-collapse">
-                    <div className="feather icon-more-horizontal"></div>
-                </NavItem>
-
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <a className="mobile-menu" id="mobile-collapse" href='javascript:'>
+                    <span></span>
+                </a>
+                </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         {/* toggle full sceen on click */}
