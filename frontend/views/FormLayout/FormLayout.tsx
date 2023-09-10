@@ -1,8 +1,12 @@
 import React from 'react';
 import { Row, Col, Card, Form, InputGroup, Button } from 'react-bootstrap';
+import '../Style/style.css';  // Your custom CSS
+import MainMenu from '../MainMenu/MainMenu';
 
 const FormLayout: React.FC = () => {
     return (
+        <>
+        <MainMenu />
         <Row>
             <Col sm={12}>
                 <Card>
@@ -48,6 +52,7 @@ const FormLayout: React.FC = () => {
                 </Card>
             </Col>
         </Row>
+        </>
     );
 }
 

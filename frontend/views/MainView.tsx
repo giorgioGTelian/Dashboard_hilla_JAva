@@ -3,12 +3,14 @@ import { Notification } from "@hilla/react-components/Notification.js";
 import { TextField } from "@hilla/react-components/TextField.js";
 import { HelloEndpoint } from "Frontend/generated/endpoints.js";
 import { useState } from "react";
+import FormLayout from './FormLayout/FormLayout';
 
 export default function MainView() {
   const [name, setName] = useState("");
 
   return (
     <>
+      <FormLayout />
       <TextField
         label="Your name"
         onValueChanged={(e) => {
