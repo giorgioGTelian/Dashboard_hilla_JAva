@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavDropdown, Nav, Dropdown, Form, InputGroup, FormControl, Button } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav, Dropdown, Form, InputGroup, FormControl, Button, NavItem } from 'react-bootstrap';
 import '../Style/style.css';  // Your custom CSS
 
 const MainMenu: React.FC = () => {
@@ -21,12 +21,18 @@ const MainMenu: React.FC = () => {
             </div>
 
             {/* Navigation */}
-            <Navbar bg="light" expand="lg" className="pcoded-navbar">
+            <Navbar bg="light" expand="lg" className="pcoded-navbar navbar-wrapper">
                 <Navbar.Brand href="#home" className="navbar-brand header-logo">
-                    Navbar scroll</Navbar.Brand>
+                    <NavItem className="b-brand">
+                        <NavItem className="b-bg"> <i className="feather icon-trending-up"></i></NavItem>
+                        <NavItem className="b-title">
+                            Navbar scroll
+                        </NavItem>
+                        </NavItem>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                  {/* Convert the <a> to a button or another appropriate element */}
-                <Button className="mobile-menu" id="mobile-header">
+                <Button className="mobile-menu" id="mobile-collapse">
                     <i className="feather icon-more-horizontal"></i>
                 </Button>
 
