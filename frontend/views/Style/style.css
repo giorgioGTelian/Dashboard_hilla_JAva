@@ -2917,6 +2917,11 @@ p.text-muted {
   .pcoded-navbar.mob-open ~ .pcoded-main-container {
     margin-left: 0;
   }
+  .pcoded-main-container {
+    position: relative;
+    min-height: 100vh;
+    margin-left: 3px;
+  }
 }
 @media only screen and (max-width: 575px) {
   .pcoded-header .navbar-nav > li:first-child {
@@ -4882,6 +4887,7 @@ body.box-layout .pcoded-navbar.theme-horizontal ~ .pcoded-header {
 @media only screen and (max-width: 991px) {
   .pcoded-header.headerpos-fixed ~ .pcoded-main-container {
     padding-top: 140px;
+    margin-left: 2px;
   }
 }
 

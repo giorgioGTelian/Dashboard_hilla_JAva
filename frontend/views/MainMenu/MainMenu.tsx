@@ -1,6 +1,18 @@
 import React from 'react';
 import { Navbar, NavDropdown, Nav, Dropdown, Form, InputGroup, FormControl, Button, NavItem } from 'react-bootstrap';
 import '../Style/style.css';  // Your custom CSS
+import { FaBeer } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaChartPie } from "react-icons/fa";
+import { FaMap } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaFile } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
+import { FaBell } from "react-icons/fa";
+import { FaPowerOff } from "react-icons/fa";
+import { FaCog } from "react-icons/fa";
 
 const MainMenu: React.FC = () => {
 
@@ -47,9 +59,9 @@ const MainMenu: React.FC = () => {
                         <Nav.Item className="active">
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-home"></i>
+                                    <i className="feather"><FaBeer /></i>
                                 </span>
-                                <span className="pcoded-mtext">Dashboard</span>
+                                <span className="pcoded-mtext"> Dashboard</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="pcoded-hasmenu">
@@ -67,25 +79,25 @@ const MainMenu: React.FC = () => {
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-file-text"></i>
+                                    <i className="feather"><FaHome /></i>
                                 </span>
-                                <span className="pcoded-mtext">Form Elements</span>
+                                <span className="pcoded-mtext"> Form Elements</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-file-plus"></i>
+                                    <i className="feather"><FaBars /></i>
                                 </span>
-                                <span className="pcoded-mtext">Form Layouts</span>
+                                <span className="pcoded-mtext"> Form Layouts</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-table"></i>
+                                    <i className="feather"><FaUser /></i>
                                 </span>
-                                <span className="pcoded-mtext">Table</span>
+                                <span className="pcoded-mtext"> Table</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="pcoded-menu-caption">
@@ -94,17 +106,17 @@ const MainMenu: React.FC = () => {
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-pie-chart"></i>
+                                    <i className="feather"><FaChartPie /></i>
                                 </span>
-                                <span className="pcoded-mtext">Chart</span>
+                                <span className="pcoded-mtext"> Chart</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-map"></i>
+                                    <i className="feather"><FaMap /></i>
                                 </span>
-                                <span className="pcoded-mtext">Maps</span>
+                                <span className="pcoded-mtext"> Maps</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="pcoded-menu-caption">
@@ -113,17 +125,17 @@ const MainMenu: React.FC = () => {
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-lock"></i>
+                                    <i className="feather"><FaEnvelope /></i>
                                 </span>
-                                <span className="pcoded-mtext">Authentication</span>
+                                <span className="pcoded-mtext"> Authentication</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-user"></i>
+                                    <i className="feather"><FaFile /></i>
                                 </span>
-                                <span className="pcoded-mtext">User Profile</span>
+                                <span className="pcoded-mtext"> User Profile</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="pcoded-menu-caption">
@@ -132,9 +144,9 @@ const MainMenu: React.FC = () => {
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
                                 <span className="pcoded-micon">
-                                    <i className="feather icon-file-plus"></i>
+                                    <i className="feather"><FaBell /></i>
                                 </span>
-                                <span className="pcoded-mtext">Menu Levels</span>
+                                <span className="pcoded-mtext"> Menu Levels</span>
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>
