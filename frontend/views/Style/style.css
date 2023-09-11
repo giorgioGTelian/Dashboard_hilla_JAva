@@ -2269,12 +2269,17 @@ p.text-muted {
 .pcoded-navbar .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li .pcoded-submenu > li > a:before {
   left: 55px;
 }
-.pcoded-navbar .pcoded-inner-navbar li.pcoded-menu-caption {
+.pcoded-navbar .pcoded-inner-navbar .pcoded-menu-caption {
   font-size: 10px;
   font-weight: 600;
   padding: 25px 20px 5px;
   text-transform: uppercase;
   position: relative;
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 .pcoded-navbar .pcoded-inner-navbar li.disabled > a {
   cursor: default;

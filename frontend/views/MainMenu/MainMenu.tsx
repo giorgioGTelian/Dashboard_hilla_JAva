@@ -38,7 +38,110 @@ const MainMenu: React.FC = () => {
                     <span></span>
                 </a>
                 </NavItem>
-                <Navbar.Collapse id="basic-navbar-nav">
+                
+                <div className='navbar-content scroll-div'>
+                    <Nav className="nav pcoded-inner-navbar">
+                        <Nav.Item className="nav-item pcoded-menu-caption">
+                            <label>Navigation</label>
+                        </Nav.Item>
+                        <Nav.Item className="active">
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-home"></i>
+                                </span>
+                                <span className="pcoded-mtext">Dashboard</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="pcoded-hasmenu">
+                            <NavDropdown title="Basic Components" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="javascript:void(0)">Action</NavDropdown.Item>
+                                <NavDropdown.Item href="javascript:void(0)">Another action</NavDropdown.Item>
+                                <NavDropdown.Item href="javascript:void(0)">Something else here</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="javascript:void(0)">Separated link</NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav.Item>
+                        <Nav.Item className="pcoded-menu-caption">
+                            <label>Forms &amp; Tables</label>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-file-text"></i>
+                                </span>
+                                <span className="pcoded-mtext">Form Elements</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-file-plus"></i>
+                                </span>
+                                <span className="pcoded-mtext">Form Layouts</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-table"></i>
+                                </span>
+                                <span className="pcoded-mtext">Table</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="pcoded-menu-caption">
+                            <label>Chart &amp; Maps</label>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-pie-chart"></i>
+                                </span>
+                                <span className="pcoded-mtext">Chart</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-map"></i>
+                                </span>
+                                <span className="pcoded-mtext">Maps</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="pcoded-menu-caption">
+                            <label>Pages</label>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-lock"></i>
+                                </span>
+                                <span className="pcoded-mtext">Authentication</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-user"></i>
+                                </span>
+                                <span className="pcoded-mtext">User Profile</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="pcoded-menu-caption">
+                            <label>Other</label>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="javascript:void(0)">
+                                <span className="pcoded-micon">
+                                    <i className="feather icon-file-plus"></i>
+                                </span>
+                                <span className="pcoded-mtext">Menu Levels</span>
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    </div>
+                </div>
+            </Navbar>
+            <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         {/* toggle full sceen on click */}
                         <Nav.Link href="javascript:void(0)" onClick={toggleFullscreen}>
@@ -57,11 +160,6 @@ const MainMenu: React.FC = () => {
                         
                     </Nav>
                 </Navbar.Collapse>
-                </div>
-            </Navbar>
-
-  
-
             {/* ... Your other contents ... */}
             </div>
     );
