@@ -9142,12 +9142,9 @@ label {
 .nav-item:hover .pcoded-mtext, .nav-item:hover .pcoded-micon {
   color: #fff;
 }
-.feather {
-  line-height: 0 !important;
-}
 /* align the icon to the text */
 .pcoded-micon {
-  margin-right: 10px;
-  margin-top: 2px;
-  top: 2px;
+  line-height: 0 !important;
+  color: #fff;
+  
 }
