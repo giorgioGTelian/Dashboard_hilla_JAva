@@ -39,7 +39,7 @@ const MainMenu: React.FC = () => {
                 <NavItem className="navbar-brand header-logo">
                     <a className="b-brand">
                         <div className="b-bg"> 
-                        <i className="feather icon-trending-up"></i>
+                        <i className="feather"><FaCog /></i>
                         </div>
                         <span className="b-title">
                             Navbar scroll
@@ -139,7 +139,7 @@ const MainMenu: React.FC = () => {
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="pcoded-menu-caption">
-                            <label>Other</label>
+                            <label>Other</label> 
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="javascript:void(0)">
